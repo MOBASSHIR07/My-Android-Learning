@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Primary Theme Palette -->
+    <color name="primary">#FF6B35</color>
+    <color name="primary_variant">#E85D04</color>
+    <color name="primary_light">#FFEADF</color>
+    <color name="secondary">#2EC4B6</color>
+    
+    <!-- Backgrounds & Surfaces -->
+    <color name="screen_bg">#F8FAFC</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="card_stroke">#E2E8F0</color>
+    
+    <!-- Typography -->
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_muted">#94A3B8</color>
+    
+    <!-- Status / Toast -->
+    <color name="toast_bg">#1E293B</color>
+    <color name="toast_border">#334155</color>
+    <color name="badge_green">#10B981</color>
+    <color name="badge_green_light">#D1FAE5</color>
+</resources>
