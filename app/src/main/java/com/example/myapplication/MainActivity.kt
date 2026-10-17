@@ -2,6 +2,7 @@ package com.example.myapplication
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.fragment.NavHostFragment
 import com.example.myapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -11,12 +12,13 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        supportFragmentManager.beginTransaction().replace(R.id.fragmentContainer, FirstFragment()).commit()
+        val navHost = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        val navController = navHost.navController
          binding.btnFirst.setOnClickListener(){
-             supportFragmentManager.beginTransaction().replace(R.id.fragmentContainer,FirstFragment()).commit()
+         navController.navigate(R.id.firstFragment)
          }
         binding.btnSecond.setOnClickListener(){
-            supportFragmentManager.beginTransaction().replace(R.id.fragmentContainer,SecondFragment()).commit()
+           navController.navigate(R.id.secondFragment)
         }
 
 
