@@ -12,5 +12,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportFragmentManager.beginTransaction().replace(R.id.fragmentContainer, FirstFragment()).commit()
+         binding.btnFirst.setOnClickListener(){
+             supportFragmentManager.beginTransaction().replace(R.id.fragmentContainer,FirstFragment()).commit()
+         }
+        binding.btnSecond.setOnClickListener(){
+            supportFragmentManager.beginTransaction().replace(R.id.fragmentContainer,SecondFragment()).commit()
+        }
+
+
     }
 }
